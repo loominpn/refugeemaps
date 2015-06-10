@@ -1,0 +1,127 @@
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.container {
+	padding: 15px;
+}
+h1 {
+	margin: 0;
+}
+h2 {
+	margin: 40px 0;
+}
+.txt-right {
+	text-align: right;
+}
+#map-cont {
+	height: 500px;
+	margin-bottom: 10px;
+}  
+#table-cont {
+	margin-bottom: 30px;
+}
+#table-cont table th:first-child {
+	width: 45px;
+}
+#table-cont table th:first-child,
+#table-cont table td:first-child {
+	text-align: right;
+}
+#table-cont table th:last-child {
+	width: 60px;
+}
+#table-cont .show-on-map {
+	cursor: pointer;
+	display: block;
+	height: 40px;
+	width: 40px;
+	background: url("../images/map_icon.png");
+	background-size: 100% 100%;
+	float: right;
+}
+#filters {
+	margin-bottom: 30px;
+	box-shadow: none;
+	border-radius: 0;
+}
+.table {
+	word-wrap: break-word;
+	table-layout: fixed;
+}
+select {
+	width: 100%;
+}
+#logo {
+	margin-top: -65px;
+}
+#top-nav {
+	position: relative;
+	z-index: 3;
+}
+#color-nav {	
+	background: none;
+	border: none;
+}
+#color-nav .nav {
+	padding: 0;
+}
+#color-nav ul li {
+	padding: 0;
+	text-align: center;
+	vertical-align: middle;
+}
+#color-nav ul li:hover {
+	opacity: 0.8;
+}
+#color-nav ul li a {
+	color: #fff;
+	padding: 15px 20px;
+	font-size: 14px;
+	line-height: 14px;
+}
+#nav-aemter {
+	background-color: #e91e63;
+}
+#nav-sprache {
+	background-color: #9c27b0;
+}
+#nav-beratung {
+	background-color: #03a9f4;
+}
+#nav-kultur {
+	background-color: #009688;
+}
+#nav-bildung {
+	background-color: #ffc107;
+}
+#nav-gesundheit {
+	background-color: #795548;
+}
+
+@media (min-width: 768px) {
+	#color-nav {
+		display: table;
+		float: none;
+		width: 100%;
+	}
+	#color-nav ul {
+		display: table-row;
+		float: none;
+		width: 100%;
+	}
+	#color-nav ul li {
+		display: table-cell;
+		float: none;
+	}
+}
+@media (max-width: 767px) {
+	#logo {
+		margin-top: -20px;
+	}
+	#color-nav {
+		margin-top: -8px;
+	}
+	.table {
+		table-layout: auto;
+	}
+}
